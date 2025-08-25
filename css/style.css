@@ -84,25 +84,74 @@ section#formation {
     margin: auto;
 }
 
-/* CENTRER LE FORMULAIRE */
-section#contact form {
-    max-width: 500px;
-    margin: 2rem auto; /* centre horizontalement */
-    text-align: left;
-    background: white;
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-
-    display: block; /* s'assure que margin auto fonctionne */
-}
-
-/* S'assure que le parent ne bloque pas le centrage */
+/* -------------------------------
+   SECTION CONTACT - BOX
+-------------------------------- */
 section#contact {
     display: flex;
+    justify-content: center; /* centre horizontalement */
+    align-items: center;
     flex-direction: column;
-    align-items: center; /* centre tout le contenu */
     padding: 3rem 1rem;
+}
+
+.contact-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Formulaire à l’intérieur de la box */
+.contact-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-box form input,
+.contact-box form textarea {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.contact-box form button {
+    background: #1e3c72;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-box form button:hover {
+    background: #ffcc00;
+    color: #1e3c72;
+}
+
+/* Infos directes */
+.contact-info {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.contact-info a {
+    color: #1e3c72;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
 }
 
 section h2 {
