@@ -84,6 +84,27 @@ section#formation {
     margin: auto;
 }
 
+/* CENTRER LE FORMULAIRE */
+section#contact form {
+    max-width: 500px;
+    margin: 2rem auto; /* centre horizontalement */
+    text-align: left;
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+
+    display: block; /* s'assure que margin auto fonctionne */
+}
+
+/* S'assure que le parent ne bloque pas le centrage */
+section#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centre tout le contenu */
+    padding: 3rem 1rem;
+}
+
 section h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -102,6 +123,8 @@ section ul {
     max-width: 600px;
     margin: 1rem auto;
 }
+
+
 
 /* -------------------------------
    FOOTER
