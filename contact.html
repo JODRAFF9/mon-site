@@ -1,17 +1,56 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MES PROJETS</title>
+    <title>Contact - SIE RACHID TRAORE</title>
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">ACCUEIL</a></li>
+                <li><a href="formation.html">FORMATION</a></li>
+                <li><a href="projects.html">PROJETS</a></li>
+                <li><a href="about.html">A PROPOS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <h1>Contactez-moi</h1>
+            <p>Restons en relation 📩</p>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact">
+            <h2>Me Contacter</h2>
+            <p>Vous pouvez me joindre via ce formulaire ou directement par email.</p>
+
+            <!-- Formulaire -->
+            <form action="mailto:sierachidtraore@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Nom :</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email :</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Message :</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+                <button type="submit">Envoyer</button>
+            </form>
+
+            <!-- Infos directes -->
+            <div style="margin-top:2rem;">
+                <p>📧 Email : <a href="mailto:sierachidtraore@gmail.com">sierachidtraore@gmail.com</a></p>
+                <p>📱 Téléphone : +226 XX XX XX XX</p>
+                <p>🌍 LinkedIn : <a href="#">Mon Profil</a></p>
+            </div>
+        </section>
+    </main>
+
     <footer>
-        <p>
-            © 2025 - TRAORE SIE RACHID | CONTACT: 
+        <p>© 2025 - TRAORE SIE RACHID | CONTACT: 
             <a href="mailto:sierachidtraore@gmail.com">sierachidtraore@gmail.com</a>
         </p>
     </footer>
