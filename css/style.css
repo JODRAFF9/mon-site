@@ -29,13 +29,16 @@ main, section {
    HEADER
 -------------------------------- */
 header {
-    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    background: linear-gradient(135deg, #1e3c72, #2a5298), 
+                url('../assets/moi.jpg') no-repeat center center;
+    background-size: cover;
     color: white;
     padding: 2rem 1rem;
     text-align: center;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
 }
+
 
 /* -------------------------------
    NAVIGATION
