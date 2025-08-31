@@ -51,7 +51,7 @@ Il a été développé en **HTML, CSS et JavaScript** afin de créer une page si
 ## 📬 Contact
 
 * 📧 Email : [sierachidtraore@gmail.com](mailto:sierachidtraore@gmail.com)
-* 🌍 Site web : *(à remplir quand il sera hébergé)*
+* 🌍 Site web : *[https://jodraff9.github.io/mon-site/](https://jodraff9.github.io/mon-site/)*
 
 ---
 
