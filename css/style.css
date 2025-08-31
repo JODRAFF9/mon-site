@@ -239,3 +239,13 @@ section.visible {
     opacity: 1;
     transform: translateY(0);
 }
+
+.contact-photo img {
+    border-radius: 50%; /* rond */
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 20px; /* centré + espace en bas */
+    border: 3px solid #333;
+}

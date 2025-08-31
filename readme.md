@@ -44,7 +44,7 @@ Il a été développé en **HTML, CSS et JavaScript** afin de créer une page si
 
 ## 📸 Aperçu
 
-👉 *(Tu peux ajouter ici une capture d’écran de ton site une fois en ligne)*
+![image](assets\img.png)
 
 ---
 
