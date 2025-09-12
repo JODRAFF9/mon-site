@@ -7,71 +7,63 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <!-- NAVIGATION PRINCIPALE -->
-        <nav class="main-nav">
-            <ul>
-                <li><a href="index.html">ACCUEIL</a></li>
-                <li><a href="formation.html">FORMATION</a></li>
-                <li><a href="projects.html">PROJETS</a></li>
-                <li><a href="contact.html" class="active">CONTACTS</a></li>
-            </ul>
-        </nav>
 
-        <!-- TEXTE DU HEADER -->
-        <div class="header-text">
-            <h1>Contactez-moi</h1>
-            <p>Restons en relation 📩</p>
-        </div>
-    </header>
+<header>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html" class="nav-link">ACCUEIL</a></li>
+            <li><a href="formation.html" class="nav-link">FORMATION</a></li>
+            <li><a href="projects.html" class="nav-link">PROJETS</a></li>
+            <li><a href="contact.html" class="nav-link">CONTACTS</a></li>
+        </ul>
+    </nav>
 
-    <main>
-        <section id="contact">
-            <h2>Me Contacter</h2>
-            <p>Vous pouvez me joindre via ce formulaire ou directement par email.</p>
+    <div class="header-text">
+        <h1>Contactez-moi</h1>
+        <p>Restons en relation 📩</p>
+    </div>
+</header>
 
-            <!-- BOX -->
-            <div class="contact-box">
+<main>
+    <section id="contact">
+        <h2>Me Contacter</h2>
+        <p>Vous pouvez me joindre via ce formulaire ou directement par email.</p>
 
-                <!-- Image de profil -->
-                <div class="contact-photo">
-                    <img src="assets/moi.jpg" alt="Photo de SIE RACHID TRAORE" width="200">
-                </div>
-
-                <!-- Formulaire -->
-                <form action="mailto:sierachidtraore@gmail.com" method="post" enctype="text/plain">
-                    <label for="name">Nom :</label>
-                    <input type="text" id="name" name="name" required>
-
-                    <label for="email">Email :</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <label for="message">Message :</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-
-                    <button type="submit">Envoyer</button>
-                </form>
-
-                <!-- Infos directes -->
-                <div class="contact-info">
-                    <p>📧 Email : <a href="mailto:sierachidtraore@gmail.com">sierachidtraore@gmail.com</a></p>
-                    <p>📱 Téléphone : +226 67 80 32 03 / +221 77 674 66 84</p>
-                    <p>🌍 LinkedIn : <a href="https://www.linkedin.com/in/si%C3%A9-rachid-traor%C3%A9-4a7152271" target="_blank">Mon Profil</a></p>
-                </div>
+        <div class="contact-box">
+            <div class="contact-photo">
+                <img src="assets/moi.jpg" alt="Photo de SIE RACHID TRAORE" width="200">
             </div>
-        </section>
-    </main>
 
-    <footer>
-        <p>© 2025 - TRAORE SIE RACHID | CONTACT: 
-            <a href="mailto:sierachidtraore@gmail.com">sierachidtraore@gmail.com</a> |
-            <a href="tel:+22667803203">+226 67803203</a>
-        </p>
-    </footer>
+            <form action="mailto:sierachidtraore@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
 
-    <!-- BOUTON SCROLL TOP -->
-    <button id="scrollTopBtn">↑</button>
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
 
-    <script src="js/script.js"></script>
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+
+            <div class="contact-info">
+                <p>📧 Email : <a href="mailto:sierachidtraore@gmail.com">sierachidtraore@gmail.com</a></p>
+                <p>📱 Téléphone : +226 67 80 32 03 / +221 77 674 66 84</p>
+                <p>🌍 LinkedIn : <a href="https://www.linkedin.com/in/si%C3%A9-rachid-traor%C3%A9-4a7152271" target="_blank">Mon Profil</a></p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>© 2025 - TRAORE SIE RACHID | CONTACT: 
+        <a href="mailto:sierachidtraore@gmail.com">sierachidtraore@gmail.com</a> |
+        <a href="tel:+22667803203">+226 67803203</a>
+    </p>
+</footer>
+
+<button id="scrollTopBtn">↑</button>
+<script src="js/script.js"></script>
 </body>
 </html>

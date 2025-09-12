@@ -1,39 +1,46 @@
-// Récupère tous les liens du menu
-const navLinks = document.querySelectorAll("nav ul li a");
-
-// Parcours les liens pour activer celui correspondant à la page
-navLinks.forEach(link => {
-    if(link.href === window.location.href){
-        link.classList.add("active");
+/* -------------------------------
+   NAVIGATION ACTIVE
+-------------------------------- */
+// Met automatiquement la classe 'active' sur le lien correspondant à la page
+const currentPage = window.location.pathname.split("/").pop();
+document.querySelectorAll('.main-nav .nav-link').forEach(link => {
+    if(link.getAttribute('href') === currentPage) {
+        link.classList.add('active');
     }
 });
 
+/* -------------------------------
+   BOUTON SCROLL TOP
+-------------------------------- */
 const scrollBtn = document.getElementById("scrollTopBtn");
 
-// Affiche le bouton après avoir scrollé 200px
-window.onscroll = function() {
-    if(document.body.scrollTop > 200 || document.documentElement.scrollTop > 200){
-        scrollBtn.style.display = "block";
-    } else {
-        scrollBtn.style.display = "none";
-    }
+window.onscroll = () => {
+    // Affiche le bouton si l'utilisateur descend de plus de 100px
+    scrollBtn.style.display = (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) ? "block" : "none";
+
+    // Appel pour révéler les sections
+    revealSections();
 };
 
-// Remonte en haut au clic
 scrollBtn.addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-const sections = document.querySelectorAll("section");
+/* -------------------------------
+   ANIMATION DES SECTIONS AU SCROLL
+-------------------------------- */
+function revealSections() {
+    const sections = document.querySelectorAll('section');
+    const windowHeight = window.innerHeight;
 
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if(entry.isIntersecting){
-            entry.target.classList.add("visible");
+    sections.forEach(section => {
+        const sectionTop = section.getBoundingClientRect().top;
+        const revealPoint = 150; // décalage avant que la section soit visible
+        if(sectionTop < windowHeight - revealPoint) {
+            section.classList.add('visible');
         }
     });
-}, { threshold: 0.2 });
+}
 
-sections.forEach(section => {
-    observer.observe(section);
-});
+// Animation initiale pour les sections déjà visibles au chargement
+document.addEventListener('DOMContentLoaded', revealSections);
