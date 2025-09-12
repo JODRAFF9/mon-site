@@ -9,26 +9,34 @@
 
 <body>
     <header>
-        <nav>
+        <!-- NAVIGATION PRINCIPALE -->
+        <nav class="main-nav">
             <ul>
                 <li><a href="index.html">ACCUEIL</a></li>
-                <li><a href="formation.html">FORMATION</a></li>
+                <li><a href="formation.html" class="active">FORMATION</a></li>
                 <li><a href="projects.html">PROJETS</a></li>
                 <li><a href="contact.html">CONTACTS</a></li>
             </ul>
+        </nav>
+
+        <!-- TEXTE DU HEADER -->
+        <div class="header-text">
             <h1>Ma Formation</h1>
             <p>Écoles & Programme académique</p>
-                <nav>
-                    <ul>
-                        <li><a href="ouezzinvilleB.html">EOB</a></li>
-                        <li><a href="loc.html">LOC</a></li>
-                        <li><a href="epo.html">EPO</a></li>
-                        <li><a href="ensae.html">ENSAE Pierre Ndiaye</a></li>
-                    </ul>
-                </nav>
+        </div>
+
+        <!-- NAVIGATION SECONDAIRE FORMATION -->
+        <nav class="sub-nav">
+            <ul>
+                <li><a href="ouezzinvilleB.html">EOB</a></li>
+                <li><a href="loc.html">LOC</a></li>
+                <li><a href="epo.html">EPO</a></li>
+                <li><a href="ensae.html">ENSAE Pierre Ndiaye</a></li>
+            </ul>
         </nav>
     </header>
 
+    <!-- SECTION FORMATION -->
     <section id="formation">
         <h2>Mes Écoles</h2>
         <p>
@@ -45,14 +53,16 @@
         </ul>
     </section>
 
+    <!-- PIED DE PAGE -->
     <footer>
         <p>
             © 2025 - TRAORE SIE RACHID | CONTACT: 
-            <a href="mailto:sierachidtraore@gmail.com">sierachidtraore@gmail.com</a>
+            <a href="mailto:sierachidtraore@gmail.com">sierachidtraore@gmail.com</a> |
             <a href="tel:+22667803203">+226 67803203</a>
         </p>
     </footer>
-            <!-- BOUTON SCROLL TOP -->
+
+    <!-- BOUTON SCROLL TOP -->
     <button id="scrollTopBtn">↑</button>
 
     <script src="js/script.js"></script>
